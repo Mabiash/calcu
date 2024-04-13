@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: black;
+}
+
+.con{
+    height: auto;
+    box-shadow: 0 0 10px rgb(0, 255, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px 7px;
+    border-radius: 20px;
+    animation: ani 1s linear infinite;
+}
+
+.incon{
+    width: 100%;
+}
+
+.top{
+    height: 5rem;
+    display: grid;
+    place-items: center;
+}
+
+.bot{
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.iptcal{
+    width: 15rem;
+    border: 0;
+    height: 80%;
+    text-align: right;
+    font-size: 30px;
+    outline: 0;
+    background-color:transparent;
+    display: flex;
+
+    color: aqua;
+}
+
+.iptcal::placeholder{
+    color: rgba(0, 255, 255, 0.822);
+}
+
+.inputs{
+    width: 100%;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4px 0;
+    width: 19rem;
+  
+}
+
+button{
+   height: 3rem;
+    padding: 5px;
+   border: 0;
+   border-radius: 50%;
+   width: 3rem;
+   font-size: 15px;
+   font-weight: 500;
+   box-shadow: 0 0 5px aqua;
+   background-color: rgba(20, 20, 20, 0.582);
+   color: aqua;
+   animation: ani1 5s linear infinite;
+   transition: 200ms all;
+}
+
+button:hover{
+   animation: none;
+   background-color: aqua;
+   color: black;
+   font-weight: 600;
+   box-shadow: none;
+}
+
+@keyframes ani {
+    50%{
+        filter: hue-rotate(360deg);
+        background-color: hue-rotate(360deg);
+    }
+}
+
+@keyframes ani1 {
+    50%{
+        filter: hue-rotate(180deg);
+    }
+}
